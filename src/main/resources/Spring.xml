@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!--    <bean id="second" class="Second" autowire="byType">-->
+<!--        <property name="name" value="Parvin"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="first" class="First">-->
+<!--        <property name="name" value="something"/>-->
+<!--    </bean>-->
+    <bean id="myDatabase" class="MyDatabase">
+        <property name="url" value="something"/>
+        <property name="password" value="olmaz"/>
+    </bean>
+    <bean id="menimServisim" class="MyServiceImp" init-method="method">
+
+<!--        <constructor-arg ref="myDatabase"/>-->
+    </bean>
+</beans>
